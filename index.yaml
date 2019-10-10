@@ -8,6 +8,6 @@ entries:
     icon: https://raw.githubusercontent.com/jenkins-x/jenkins-x-platform/master/images/java.png
     name: doremi-activiti7-rb-app
     urls:
-    - https://github.com/jperez1973/helm-repo/doremi-activiti7-rb-app-0.1.0.tgz
+    - https://jperez1973.github.io/helm-repo//doremi-activiti7-rb-app-0.1.0.tgz
     version: 0.1.0
 generated: "2019-10-10T13:53:46.5021671+02:00"
