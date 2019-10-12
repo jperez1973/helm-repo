@@ -1,13 +1,13 @@
 apiVersion: v1
 entries:
-  doremi-activiti7-rb-app:
+  activiti7-rb-app:
   - apiVersion: v1
-    created: "2019-10-12T20:06:19.043466+02:00"
+    created: "2019-10-12T20:29:00.9677669+02:00"
     description: A Helm chart for Kubernetes
-    digest: 672b9346c6dfcc6784412bbddacfe7c88077bf62ce125724a382299bd6274904
+    digest: 88e5f1cbe3812fe7c40bb50df66ffe1829de7402488fce627b74972201aeb9c0
     icon: https://raw.githubusercontent.com/jenkins-x/jenkins-x-platform/master/images/java.png
-    name: doremi-activiti7-rb-app
+    name: activiti7-rb-app
     urls:
-    - https://jperez1973.github.io/helm-repo/doremi-activiti7-rb-app-0.1.6.tgz
-    version: 0.1.6
-generated: "2019-10-12T20:06:19.0404844+02:00"
+    - https://jperez1973.github.io/helm-repo/activiti7-rb-app-0.1.7.tgz
+    version: 0.1.7
+generated: "2019-10-12T20:29:00.9637093+02:00"

@@ -42,11 +42,11 @@ javaOpts:
   xms: 512m
   other: -XX:+UnlockExperimentalVMOptions -XX:+UseCGroupMemoryLimitForHeap -Dsun.zip.disableMemoryMapping=true -XX:+UseParallelGC -XX:MinHeapFreeRatio=5 -XX:MaxHeapFreeRatio=10 -XX:GCTimeRatio=4 -XX:AdaptiveSizePolicyWeight=90
 image:
-  repository: doremi-activiti7-rb-app
+  repository: activiti7-rb-app
   tag: 0.0.1-SNAPSHOT
   pullPolicy: IfNotPresent
 service:
-  name: doremi-activiti7-rb-app
+  name: activiti7-rb-app
   type: ClusterIP
   externalPort: 80
   internalPort: 8080
