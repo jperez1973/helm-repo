@@ -31,7 +31,7 @@ spec:
           value: {{ template "fullname" . }}
 {{- end }}
         - name: SPRING_RABBITMQ_HOST
-          value: "{{ .Release.Name }}-rabbitmq"
+          value: "{{ .Values.global.rabbitmq.host.value }}"
         - name: SPRING_RABBITMQ_USERNAME
           value: {{ .Values.global.rabbitmq.username.value }}
         - name: SPRING_RABBITMQ_USERNAME
