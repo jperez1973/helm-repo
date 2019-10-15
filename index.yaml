@@ -2,7 +2,79 @@ apiVersion: v1
 entries:
   activiti-rb-app:
   - apiVersion: v1
-    created: "2019-10-12T21:44:18.4442804+02:00"
+    created: "2019-10-15T13:14:19.3625529+02:00"
+    description: A Helm chart for Kubernetes
+    digest: a994e0a4cfc005e95736f50ef9e2e5e98f74fa2cad8c223fc83a12880f92c106
+    icon: https://raw.githubusercontent.com/jenkins-x/jenkins-x-platform/master/images/java.png
+    name: activiti-rb-app
+    urls:
+    - https://jperez1973.github.io/helm-repo/activiti-rb-app-0.1.18.tgz
+    version: 0.1.18
+  - apiVersion: v1
+    created: "2019-10-15T13:14:19.3615196+02:00"
+    description: A Helm chart for Kubernetes
+    digest: 0f814da48945df2759b86d2025f6e4f66cbc53397fce7a8996f7f0a1edd3605b
+    icon: https://raw.githubusercontent.com/jenkins-x/jenkins-x-platform/master/images/java.png
+    name: activiti-rb-app
+    urls:
+    - https://jperez1973.github.io/helm-repo/activiti-rb-app-0.1.17.tgz
+    version: 0.1.17
+  - apiVersion: v1
+    created: "2019-10-15T13:14:19.359518+02:00"
+    description: A Helm chart for Kubernetes
+    digest: a27454831898cc52d8d59b40fdb0cb5cacb29b1e38b595c7594643ba6124b2b3
+    icon: https://raw.githubusercontent.com/jenkins-x/jenkins-x-platform/master/images/java.png
+    name: activiti-rb-app
+    urls:
+    - https://jperez1973.github.io/helm-repo/activiti-rb-app-0.1.16.tgz
+    version: 0.1.16
+  - apiVersion: v1
+    created: "2019-10-15T13:14:19.3585543+02:00"
+    description: A Helm chart for Kubernetes
+    digest: 8cf9987d48f4755bb94947d5916a0930dbee2e54afd5f2d6eef6e539918e56a0
+    icon: https://raw.githubusercontent.com/jenkins-x/jenkins-x-platform/master/images/java.png
+    name: activiti-rb-app
+    urls:
+    - https://jperez1973.github.io/helm-repo/activiti-rb-app-0.1.15.tgz
+    version: 0.1.15
+  - apiVersion: v1
+    created: "2019-10-15T13:14:19.3575465+02:00"
+    description: A Helm chart for Kubernetes
+    digest: 88b26b6f5d712782c8a492f3dc11845c11345dcae53b21770522399aba276348
+    icon: https://raw.githubusercontent.com/jenkins-x/jenkins-x-platform/master/images/java.png
+    name: activiti-rb-app
+    urls:
+    - https://jperez1973.github.io/helm-repo/activiti-rb-app-0.1.14.tgz
+    version: 0.1.14
+  - apiVersion: v1
+    created: "2019-10-15T13:14:19.3565558+02:00"
+    description: A Helm chart for Kubernetes
+    digest: 1f92e6d168f93ceac953ab9c5acca68fbfb1f09efbd6d85f010b0be520f199e7
+    icon: https://raw.githubusercontent.com/jenkins-x/jenkins-x-platform/master/images/java.png
+    name: activiti-rb-app
+    urls:
+    - https://jperez1973.github.io/helm-repo/activiti-rb-app-0.1.13.tgz
+    version: 0.1.13
+  - apiVersion: v1
+    created: "2019-10-15T13:14:19.3555532+02:00"
+    description: A Helm chart for Kubernetes
+    digest: 4da70a28ad884989a6e041ca5125c1b0c7a9e4f9f8e11685463c231e1fbfbee4
+    icon: https://raw.githubusercontent.com/jenkins-x/jenkins-x-platform/master/images/java.png
+    name: activiti-rb-app
+    urls:
+    - https://jperez1973.github.io/helm-repo/activiti-rb-app-0.1.12.tgz
+    version: 0.1.12
+  - apiVersion: v1
+    created: "2019-10-15T13:14:19.354518+02:00"
+    description: A Helm chart for Kubernetes
+    digest: d6ccb9a4779928f750d84861a15f253e9bc561b3e9845d53e76696bb3c8e6d6d
+    icon: https://raw.githubusercontent.com/jenkins-x/jenkins-x-platform/master/images/java.png
+    name: activiti-rb-app
+    urls:
+    - https://jperez1973.github.io/helm-repo/activiti-rb-app-0.1.11.tgz
+    version: 0.1.11
+  - apiVersion: v1
+    created: "2019-10-15T13:14:19.3535205+02:00"
     description: A Helm chart for Kubernetes
     digest: 1678cbb803323ea0a062b5129e5aa24f85da00b78e7ed9e40a32860ae28cec3e
     icon: https://raw.githubusercontent.com/jenkins-x/jenkins-x-platform/master/images/java.png
@@ -10,4 +82,4 @@ entries:
     urls:
     - https://jperez1973.github.io/helm-repo/activiti-rb-app-0.1.10.tgz
     version: 0.1.10
-generated: "2019-10-12T21:44:18.4422471+02:00"
+generated: "2019-10-15T13:14:19.3515194+02:00"
