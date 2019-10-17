@@ -5,7 +5,7 @@ replicaCount: 1
 global:
   rabbitmq:
     host:
-      value: "doremi-rabbitmq"
+      value: ""
     username:
       value: guest
     password:
@@ -23,7 +23,7 @@ global:
 db:
   uri: ""
   name: activitipostgresql
-  deployPostgres: false
+  deployPostgres: true
   port: 5432
 
 activitipostgresql:
@@ -69,7 +69,6 @@ readinessProbe:
   successThreshold: 1
   timeoutSeconds: 3
 terminationGracePeriodSeconds: 20
-
 
 ingress:
   ## Set to true to enable ingress record generation
