@@ -22,12 +22,13 @@ global:
     hostName: ""
 db:
   uri: ""
-  name: activitipostgresql
-  deployPostgres: true
-  port: 5432
+  name: activitimysql
+  deployMysql: true
+  port: 3306
+  serviceName: mysql
 
-activitipostgresql:
-   postgresPassword: activiti
+activitimysql:
+   mysqlPassword: activiti
 
 ## Allows the specification of additional environment variables
 extraEnv: |

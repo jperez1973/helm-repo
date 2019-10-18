@@ -2,6 +2,7 @@
 {{/*
 Expand the name of the chart.
 */}}
+{{- define "common.keycloack-url" -}}:from common{{- end -}}
 {{- define "name" -}}
 {{- default .Chart.Name .Values.nameOverride | trunc 63 | trimSuffix "-" -}}
 {{- end -}}
