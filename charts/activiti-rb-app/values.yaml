@@ -5,7 +5,7 @@ replicaCount: 1
 global:
   rabbitmq:
     host:
-      value: "doremi-rabbitmq"
+      value: ""
     username:
       value: guest
     password:
@@ -22,12 +22,13 @@ global:
     hostName: ""
 db:
   uri: ""
-  name: activitipostgresql
-  deployPostgres: false
-  port: 5432
+  name: activitimysql
+  deployMysql: true
+  port: 3306
+  serviceName: mysql
 
-activitipostgresql:
-   postgresPassword: activiti
+activitimysql:
+   mysqlPassword: activiti
 
 ## Allows the specification of additional environment variables
 extraEnv: |
@@ -69,7 +70,6 @@ readinessProbe:
   successThreshold: 1
   timeoutSeconds: 3
 terminationGracePeriodSeconds: 20
-
 
 ingress:
   ## Set to true to enable ingress record generation

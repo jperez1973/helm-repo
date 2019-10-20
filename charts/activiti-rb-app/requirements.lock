@@ -1,0 +1,6 @@
+dependencies:
+- name: common
+  repository: file://../imported-charts/common/
+  version: 1.1.5
+digest: sha256:9e0d566e6f0574f754e23b8bc1f3b4aee9705449f8b6e4338df52edab4d1c093
+generated: "2019-10-18T11:54:15.0464174+02:00"

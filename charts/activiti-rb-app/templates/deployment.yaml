@@ -31,9 +31,11 @@ spec:
           value: {{ template "fullname" . }}
 {{- end }}
         - name: SPRING_RABBITMQ_HOST
+{{- if .Values.global.rabbitmq.host.value }}
           value: "{{ .Values.global.rabbitmq.host.value }}"
-        - name: SPRING_RABBITMQ_USERNAME
-          value: {{ .Values.global.rabbitmq.username.value }}
+{{- else }}
+          value: "{{ .Release.Name }}-rabbitmq"
+{{- end }}
         - name: SPRING_RABBITMQ_USERNAME
           value: {{ .Values.global.rabbitmq.username.value }}
         - name: SPRING_RABBITMQ_PASSWORD
@@ -42,33 +44,32 @@ spec:
               name: {{ .Release.Name }}-rabbitmq
               key: rabbitmq-password
         - name: ACT_KEYCLOAK_URL
-{{- if .Values.global.keycloak.url }}
-          value: "{{ .Values.global.keycloak.url }}"
-{{- else }}
-          value: "{{ .Release.Name }}-keycloak"
-{{- end }}
-{{- if .Values.db.deployPostgres }}
+          valueFrom:
+            configMapKeyRef:
+              name: {{ .Release.Name }}-configmap
+              key: keycloak-url
+{{- if .Values.db.deployMysql }}
         - name: SPRING_DATASOURCE_URL
   {{- if .Values.db.uri }}
           value: "{{ .Values.db.uri }}"
   {{- else }}
-          value: "jdbc:postgresql://{{ .Release.Name }}-{{ .Values.db.name }}:{{ .Values.db.port }}/postgres"
+          value: "jdbc:mysql://{{ .Release.Name }}-{{ .Values.db.serviceName }}:{{ .Values.db.port }}/{{ .Values.db.name }}"
   {{- end }}
         - name: SPRING_DATASOURCE_DRIVER_CLASS_NAME
-          value: {{ default "org.postgresql.Driver" .Values.db.driver }}
+          value: {{ default "com.mysql.cj.jdbc.Driver" .Values.db.driver }}
         - name: SPRING_DATASOURCE_USERNAME
-          value: {{ default "postgres" .Values.db.user }}
+          value: {{ default "activiti" .Values.db.user }}
         - name: SPRING_DATASOURCE_PASSWORD
   {{- if .Values.db.pass }}
           value: "{{ .Values.db.pass }}"
   {{ else }}
           valueFrom:
             secretKeyRef:
-              name: {{ .Release.Name }}-{{ .Values.db.name }}
-              key: postgres-password
+              name: {{ .Release.Name }}-{{ .Values.db.serviceName }}
+              key: mysql-password
   {{- end }}
         - name: SPRING_JPA_DATABASE_PLATFORM
-          value: {{ default "org.hibernate.dialect.PostgreSQLDialect" .Values.db.platform }}
+          value: {{ default "org.hibernate.dialect.MySQLDialect" .Values.db.platform }}
 {{- end }}
         - name: EUREKA_CLIENT_ENABLED
           value: "false"
