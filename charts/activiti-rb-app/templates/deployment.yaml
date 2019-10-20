@@ -44,7 +44,10 @@ spec:
               name: {{ .Release.Name }}-rabbitmq
               key: rabbitmq-password
         - name: ACT_KEYCLOAK_URL
-          value: http://activiti-cloud-gateway.activiti7.10.0.75.1.nip.io/auth
+          valueFrom:
+            configMapKeyRef:
+              name: {{ .Release.Name }}-configmap
+              key: keycloak-url
 {{- if .Values.db.deployMysql }}
         - name: SPRING_DATASOURCE_URL
   {{- if .Values.db.uri }}
