@@ -38,7 +38,7 @@ image:
   tag: 0.0.1-SNAPSHOT
   pullPolicy: IfNotPresent
 service:
-  name: cloud-connector
+  name: cc-service
   type: ClusterIP
   externalPort: 80
   internalPort: 8080
